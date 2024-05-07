@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.*;
 
+//TODO: Fix code to use the this.prevFoodLevel() and this.foodLevel() etc, or find a better way to do it.
 /**
  * Oh hey a convenient spot for a javadoc
  * So, this file basically makes it so that the player will still lose food bars even if they have the custom effect
