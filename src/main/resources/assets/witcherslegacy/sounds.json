@@ -7,7 +7,7 @@
   },
 
   "wl_potion": {
-    "subtitle": "sound.witcherslegacy.bloodloss",
+    "subtitle": "sound.witcherslegacy.potion",
     "sounds": [
       "witcherslegacy:effect/wl_potion"
     ]
