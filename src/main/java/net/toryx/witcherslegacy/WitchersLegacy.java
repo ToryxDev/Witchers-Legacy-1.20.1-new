@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.toryx.witcherslegacy.block.ModBlocks;
 import net.toryx.witcherslegacy.effect.ModBleedEffect;
+import net.toryx.witcherslegacy.effect.ModFireEffect;
 import net.toryx.witcherslegacy.item.ModItemGroups;
 import net.toryx.witcherslegacy.item.ModItems;
 import net.toryx.witcherslegacy.sounds.WL_SoundManager;
@@ -20,6 +21,7 @@ public class WitchersLegacy implements ModInitializer {
 	public static final String NAME = "Witcher's Legacy";
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 	public static final StatusEffect BLEED = new ModBleedEffect();
+	public static final StatusEffect INCINERATE = new ModFireEffect();
 
 
 
@@ -31,5 +33,6 @@ public class WitchersLegacy implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		WL_SoundManager.registerSounds();
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("witcherslegacy", "bleed"), BLEED);
+		Registry.register(Registries.STATUS_EFFECT, new Identifier("witcherslegacy", "incinerate"), INCINERATE);
 	}
 }
