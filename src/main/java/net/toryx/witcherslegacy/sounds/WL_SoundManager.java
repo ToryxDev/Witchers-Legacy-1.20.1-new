@@ -6,6 +6,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.toryx.witcherslegacy.WitchersLegacy;
 
+//TODO: Remove the underscore from this class name.
 public class WL_SoundManager {
         public static final SoundEvent WL_BLOODLOSS = registerSoundEvent("wl_bloodloss");
         public static final SoundEvent WL_POTION = registerSoundEvent("wl_potion");
