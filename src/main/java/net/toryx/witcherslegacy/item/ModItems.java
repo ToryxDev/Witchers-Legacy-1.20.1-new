@@ -10,27 +10,31 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.toryx.witcherslegacy.WitchersLegacy;
+import net.toryx.witcherslegacy.item.custom.WitcherMedallion;
 
 public class ModItems {
     public static final Item ALCOHEST = registerItem("alcohest", new Item(new FabricItemSettings()));
-    public static final Item ALCOHEST2 = registerItem("alcohest2", new Item(new FabricItemSettings()));
-    public static final Item BLOODDUST = registerItem("blooddust", new Item(new FabricItemSettings()));
+    public static final Item DWARVEN_SPIRIT = registerItem("dwarven_spirit", new Item(new FabricItemSettings()));
+    public static final Item BLOOD_DUST = registerItem("blood_dust", new Item(new FabricItemSettings()));
     public static final Item CELANDINE = registerItem("celandine", new Item(new FabricItemSettings()));
-    public static final Item BRAIN = registerItem("brain", new Item(new FabricItemSettings()));
-    public static final Item MOONDUST = registerItem("moondust", new Item(new FabricItemSettings()));
+    public static final Item UNDEAD_BRAIN = registerItem("undead_brain", new Item(new FabricItemSettings()));
+    public static final Item MOON_DUST = registerItem("moon_dust", new Item(new FabricItemSettings()));
+    public static final Item WITCHER_MEDALLION = registerItem("witcher_medallion", new WitcherMedallion(new FabricItemSettings()));
 
-
-    private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
-        entries.addAfter(Items.GLASS_BOTTLE, ALCOHEST2);
-        entries.addAfter(Items.GLASS_BOTTLE, ALCOHEST);
-    }
+    //ADD ITEMS TO EXISTING TAB
+    //private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
+    //    entries.add(DWARVEN_SPIRIT);
+    //    entries.add(ALCOHEST);
+    //}
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(WitchersLegacy.MOD_ID, name), item);
     }
     public static void registerModItems() {
         WitchersLegacy.LOGGER.info("Registering Mod Items for" + WitchersLegacy.MOD_ID);
-
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientsItemGroup);
+    }
+
+    private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
     }
 }
