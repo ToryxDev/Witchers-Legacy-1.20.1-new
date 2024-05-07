@@ -16,6 +16,6 @@ public class WL_SoundManager {
         }
         
         public static void registerSounds() {
-            WitchersLegacy.LOGGER.info("Registering Sounds for " + WitchersLegacy.MOD_ID);
+            WitchersLegacy.LOGGER.info(WitchersLegacy.NAME + " has registered its sounds.");
         }
     }
