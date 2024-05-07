@@ -11,8 +11,9 @@
 		"Mavity The Madity - funny mixins man"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new",
+		"issues": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new/issues"
+		"sources": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new"
 	},
 	"license": "MIT",
 	"icon": "assets/witcherslegacy/icon.png",
