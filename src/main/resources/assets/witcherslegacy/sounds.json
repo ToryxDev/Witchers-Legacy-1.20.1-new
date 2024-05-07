@@ -1,0 +1,15 @@
+{
+  "wl_blood_loss": {
+    "subtitle": "sound.witcherslegacy.bloodloss",
+    "sounds": [
+      "witcherslegacy:effect/wl_bloodloss"
+    ]
+  },
+
+  "wl_potion": {
+    "subtitle": "sound.witcherslegacy.bloodloss",
+    "sounds": [
+      "witcherslegacy:effect/wl_potion"
+    ]
+  }
+}

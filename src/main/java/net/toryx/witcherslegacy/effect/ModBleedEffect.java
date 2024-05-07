@@ -3,11 +3,13 @@ package net.toryx.witcherslegacy.effect;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.Random;
+import java.util.function.Supplier;
 
-public class ModBleedEffect extends StatusEffect {
+public class ModBleedEffect extends StatusEffect{
     int NaturalRegenRate;
     private static final Random random = new Random();
     private static final int DAMAGE_INTERVAL = 20 * 2; // Damage every 5 seconds (20 ticks per second)
@@ -40,6 +42,4 @@ public class ModBleedEffect extends StatusEffect {
             }
         }
     }
-
-
 }

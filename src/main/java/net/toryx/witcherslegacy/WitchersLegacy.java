@@ -10,6 +10,7 @@ import net.toryx.witcherslegacy.block.ModBlocks;
 import net.toryx.witcherslegacy.effect.ModBleedEffect;
 import net.toryx.witcherslegacy.item.ModItemGroups;
 import net.toryx.witcherslegacy.item.ModItems;
+import net.toryx.witcherslegacy.sounds.WL_SoundManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,11 +21,15 @@ public class WitchersLegacy implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 	public static final StatusEffect BLEED = new ModBleedEffect();
 
+
+
+
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		WL_SoundManager.registerSounds();
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("witcherslegacy", "bleed"), BLEED);
 	}
 }
