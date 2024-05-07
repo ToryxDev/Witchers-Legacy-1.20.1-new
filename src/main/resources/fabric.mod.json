@@ -7,6 +7,9 @@
 	"authors": [
 		"Toryx Games"
 	],
+	"contributors": [
+		"Mavity The Madity - funny mixins man"
+	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"

@@ -30,6 +30,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        WitchersLegacy.LOGGER.info("Registering Mod Blocks for" + WitchersLegacy.MOD_ID);
+        WitchersLegacy.LOGGER.info(WitchersLegacy.NAME + " has registered its blocks.");
     }
 }

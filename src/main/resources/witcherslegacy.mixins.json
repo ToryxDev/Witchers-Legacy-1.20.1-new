@@ -3,6 +3,7 @@
   "package": "net.toryx.witcherslegacy.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "canFoodHeal",
     "HungerManagerMixin"
   ],
   "injectors": {

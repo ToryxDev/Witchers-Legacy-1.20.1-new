@@ -31,6 +31,6 @@ public class ModItemGroups {
                 }).build());
 
     public static void registerItemGroups() {
-        WitchersLegacy.LOGGER.info("Registering Item Groups for " + WitchersLegacy.MOD_ID);
+        WitchersLegacy.LOGGER.info(WitchersLegacy.NAME + " has registered its itemgroups.");
     }
 }

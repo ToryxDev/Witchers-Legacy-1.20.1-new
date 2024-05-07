@@ -31,7 +31,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(WitchersLegacy.MOD_ID, name), item);
     }
     public static void registerModItems() {
-        WitchersLegacy.LOGGER.info("Registering Mod Items for" + WitchersLegacy.MOD_ID);
+        WitchersLegacy.LOGGER.info(WitchersLegacy.NAME + " has registered its items.");
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientsItemGroup);
     }
 
