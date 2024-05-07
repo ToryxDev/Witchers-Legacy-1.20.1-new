@@ -12,8 +12,10 @@ import net.minecraft.util.Identifier;
 import net.toryx.witcherslegacy.WitchersLegacy;
 
 public class ModBlocks {
+    
     public static final Block DIMERITIUM_BLOCK = registerBlock("dimeritium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    
     public static final Block RAW_DIMERITIUM_BLOCK = registerBlock("raw_dimeritium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK)));
 
@@ -24,6 +26,7 @@ public class ModBlocks {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(WitchersLegacy.MOD_ID, name), block);
     }
+    
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(WitchersLegacy.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
