@@ -20,7 +20,8 @@ public class WitchersLegacy implements ModInitializer {
 	public static final String MOD_ID = "witcherslegacy";
 	
 	public static final String NAME = "Witcher's Legacy";
-	
+
+	// Erm... GitHub... are you dying trying to indent this line properly??
  public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 	
 	public static final StatusEffect BLEED = new ModBleedEffect();
