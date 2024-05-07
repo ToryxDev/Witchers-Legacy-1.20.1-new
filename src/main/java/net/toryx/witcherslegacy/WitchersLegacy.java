@@ -21,7 +21,7 @@ public class WitchersLegacy implements ModInitializer {
 	
 	public static final String NAME = "Witcher's Legacy";
 	
-    	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
+ public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 	
 	public static final StatusEffect BLEED = new ModBleedEffect();
 	
