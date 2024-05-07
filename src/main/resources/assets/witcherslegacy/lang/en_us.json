@@ -9,7 +9,7 @@
   "block.witcherslegacy.dimeritium_block": "Block of Dimeritium",
   "block.witcherslegacy.raw_dimeritium_block": "Block of Raw Dimeritium",
 
-  "itemgroup.alcohest": "§eWitcher's Legacy",
+  "witcherslegacy.itemgroup.alcohest": "§eWitcher's Legacy",
   
   "effect.witcherslegacy.bleed": "Bleeding"
 }
