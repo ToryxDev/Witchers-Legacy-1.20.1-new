@@ -13,7 +13,7 @@ import net.toryx.witcherslegacy.block.ModBlocks;
 public class ModItemGroups {
     public static final ItemGroup ALCOHEST_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(WitchersLegacy.MOD_ID, "alcohest"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.alcohest"))
+            FabricItemGroup.builder().displayName(Text.translatable("witchers_legacy.itemgroup.alcohest"))
                 .icon(() -> new ItemStack(ModItems.ALCOHEST)).entries((displayContext, entries) -> {
                     //PUT ITEMS IN ITEM GROUPS HERE
                     entries.add(ModItems.ALCOHEST);
