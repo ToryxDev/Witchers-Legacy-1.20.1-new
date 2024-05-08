@@ -4,10 +4,16 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.*;
 import net.minecraft.entity.player.PlayerEntity;
 
+import net.toryx.witcherslegacy.WitchersLegacy;
+
 import java.util.Random;
 
 public class ModBleedEffect extends StatusEffect{
-    private static final Random random = new Random();
+
+    private static int tt = 160;
+
+    // NEVER. MAKE. RANDOM. FINAL.
+    private static Random random = new Random();
 
     public ModBleedEffect() {
         super(StatusEffectCategory.HARMFUL, 0xeb4c42); // Color in RGB
@@ -21,9 +27,12 @@ public class ModBleedEffect extends StatusEffect{
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity instanceof PlayerEntity) {
-            float extraDamage = (float) (random.nextInt(2, 4) + 1);
-            if (entity.hasStatusEffect(ModBleedEffect.this) && entity.hurtTime >= 8) {
+            float extraDamage = (float) (random.nextInt(1, 3) + 0.5);
+            if (entity.hasStatusEffect(WitchersLegacy.BLEED) && tt == 180) {
+                tt = 0;
                 entity.damage(entity.getDamageSources().magic(), extraDamage);
+            } else {
+                tt++;
             }
         }
     }
