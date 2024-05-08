@@ -1,9 +1,7 @@
-package net.toryx.witcherslegacy.effect;
+package net.toryx.witcherslegacy.damage;
 
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.damage.DamageType;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
+import net.minecraft.entity.damage.*;
+import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 

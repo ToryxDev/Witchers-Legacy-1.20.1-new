@@ -3,20 +3,16 @@ package net.toryx.witcherslegacy;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
+import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 
 import net.toryx.witcherslegacy.block.ModBlocks;
-import net.toryx.witcherslegacy.effect.ModBleedEffect;
-import net.toryx.witcherslegacy.effect.ModFireEffect;
-import net.toryx.witcherslegacy.item.ModItemGroups;
-import net.toryx.witcherslegacy.item.ModItems;
-import net.toryx.witcherslegacy.sounds.WL_SoundManager;
+import net.toryx.witcherslegacy.effect.*;
+import net.toryx.witcherslegacy.item.*;
+import net.toryx.witcherslegacy.itemgroup.ModItemGroups;
+import net.toryx.witcherslegacy.sounds.WitchersLegacySoundManager;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import org.slf4j.*;
 
 public class WitchersLegacy implements ModInitializer {
 	
@@ -28,7 +24,7 @@ public class WitchersLegacy implements ModInitializer {
 	public static final StatusEffect INCINERATE = new ModFireEffect();
 
 	// Erm... GitHub... are you dying trying to indent this line properly??
-  public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
+  	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 	
 	@Override
 	public void onInitialize() {
@@ -36,7 +32,7 @@ public class WitchersLegacy implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		WL_SoundManager.registerSounds();
+		WitchersLegacySoundManager.registerSounds();
 
 		// Register effects
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("witcherslegacy", "bleed"), BLEED);

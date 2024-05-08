@@ -3,7 +3,7 @@
 	"id": "witcherslegacy",
 	"version": "${version}",
 	"name": "Witcher's Legacy",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft mod by Cin made to add stuff from The Witcher!",
 	"authors": [
 		"Toryx Games"
 	],
@@ -12,7 +12,7 @@
 	],
 	"contact": {
 		"homepage": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new",
-		"issues": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new/issues"
+		"issues": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new/issues",
 		"sources": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new"
 	},
 	"license": "MIT",
