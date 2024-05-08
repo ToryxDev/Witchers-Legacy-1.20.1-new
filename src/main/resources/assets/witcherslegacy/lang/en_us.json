@@ -16,5 +16,9 @@
   "sound.witcherslegacy.potion": "",
   
   "effect.witcherslegacy.bleed": "Bleeding",
-  "effect.witcherslegacy.incinerate": "Incineration"
+  "effect.witcherslegacy.incinerate": "Incineration",
+
+  "witcherslegacy.midnightconfig.title": "Witcher's Legacy Settings",
+
+  "witcherslegacy.midnightconfig.comment_1": "Witcher's Legacy Config"
 }

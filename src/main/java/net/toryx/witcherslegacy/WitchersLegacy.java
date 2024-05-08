@@ -1,5 +1,6 @@
 package net.toryx.witcherslegacy;
 
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.entity.effect.StatusEffect;
@@ -7,6 +8,7 @@ import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 
 import net.toryx.witcherslegacy.block.ModBlocks;
+import net.toryx.witcherslegacy.config.WitchersLegacyConfig;
 import net.toryx.witcherslegacy.effect.*;
 import net.toryx.witcherslegacy.item.*;
 import net.toryx.witcherslegacy.itemgroup.ModItemGroups;
@@ -33,6 +35,9 @@ public class WitchersLegacy implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		WitchersLegacySoundManager.registerSounds();
+
+		// Config
+		MidnightConfig.init(WitchersLegacy.MOD_ID, WitchersLegacyConfig.class);
 
 		// Register effects
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("witcherslegacy", "bleed"), BLEED);
