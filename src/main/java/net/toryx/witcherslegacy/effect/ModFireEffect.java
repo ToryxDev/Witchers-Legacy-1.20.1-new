@@ -1,8 +1,7 @@
 package net.toryx.witcherslegacy.effect;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.*;
 import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.Random;

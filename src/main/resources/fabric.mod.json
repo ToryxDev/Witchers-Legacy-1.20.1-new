@@ -3,7 +3,7 @@
 	"id": "witcherslegacy",
 	"version": "${version}",
 	"name": "Witcher's Legacy",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft mod by Cin made to add stuff from The Witcher!",
 	"authors": [
 		"Toryx Games"
 	],
@@ -11,8 +11,9 @@
 		"Mavity The Madity - funny mixins man"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new",
+		"issues": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new/issues",
+		"sources": "https://github.com/ToryxDev/Witchers-Legacy-1.20.1-new"
 	},
 	"license": "MIT",
 	"icon": "assets/witcherslegacy/icon.png",
@@ -32,10 +33,12 @@
 		"witcherslegacy.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.10",
+		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"midnightlib": "1.4.1",
+		"modmenu": "7.0.1"
 	},
 	"suggests": {
 		"another-mod": "*"

@@ -1,16 +1,24 @@
 {
   "item.witcherslegacy.alcohest": "Alcohest",
-  "item.witcherslegacy.alcohest2": "Dwarven Spirit",
-  "item.witcherslegacy.blooddust": "Blood Dust",
-  "item.witcherslegacy.brain": "Undead Brain",
+  "item.witcherslegacy.dwarven_spirit": "Dwarven Spirit",
+  "item.witcherslegacy.blood_dust": "Blood Dust",
+  "item.witcherslegacy.undead_brain": "Undead Brain",
   "item.witcherslegacy.celandine": "Celandine",
-  "item.witcherslegacy.moondust": "Moon Dust",
+  "item.witcherslegacy.moon_dust": "Moon Dust",
+  "item.witcherslegacy.witcher_medallion": "Witcher Medallion",
 
   "block.witcherslegacy.dimeritium_block": "Block of Dimeritium",
   "block.witcherslegacy.raw_dimeritium_block": "Block of Raw Dimeritium",
 
-  "itemgroup.alcohest": "§eWitcher's Legacy",
+  "witcherslegacy.itemgroup.alcohest": "§eWitcher's Legacy",
+  
+  "sound.witcherslegacy.bloodloss": "",
+  "sound.witcherslegacy.potion": "",
+  
   "effect.witcherslegacy.bleed": "Bleeding",
-  "effect.witcherslegacy.incinerate": "Incineration"
+  "effect.witcherslegacy.incinerate": "Incineration",
 
+  "witcherslegacy.midnightconfig.title": "Witcher's Legacy Settings",
+
+  "witcherslegacy.midnightconfig.comment_1": "Witcher's Legacy Config"
 }
