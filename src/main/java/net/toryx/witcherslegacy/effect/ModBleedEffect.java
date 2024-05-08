@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class ModBleedEffect extends StatusEffect{
 
-    private static int tt = 160;
+    private static int tt = 0;
 
     // NEVER. MAKE. RANDOM. FINAL.
     private static Random random = new Random();
