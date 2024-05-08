@@ -11,8 +11,9 @@
 
   "witcherslegacy.itemgroup.alcohest": "§eWitcher's Legacy",
   
-  "effect.witcherslegacy.bleed": "Bleeding",
-  
   "sound.witcherslegacy.bloodloss": "",
   "sound.witcherslegacy.potion": ""
+  
+  "effect.witcherslegacy.bleed": "Bleeding",
+  "effect.witcherslegacy.incinerate": "Incineration"
 }
